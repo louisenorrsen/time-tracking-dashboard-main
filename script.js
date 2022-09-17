@@ -6,15 +6,24 @@ window.addEventListener('load', () => {
     fetchData('weekly')
 })
 
-daily.addEventListener('click', () => {
+daily.addEventListener('click', function () {
+    weekly.style.color = "#bdc1ff"
+    daily.style.color = "#fff"
+    monthly.style.color = "#bdc1ff"
     fetchData('daily')
 })
 
-weekly.addEventListener('click', () => {
+weekly.addEventListener('click', function () {
+    weekly.style.color = "#fff"
+    daily.style.color = "#bdc1ff"
+    monthly.style.color = "#bdc1ff"
     fetchData('weekly')
 })
 
-monthly.addEventListener('click', () => {
+monthly.addEventListener('click', function () {
+    weekly.style.color = "#bdc1ff"
+    daily.style.color = "#bdc1ff"
+    monthly.style.color = "#fff"
     fetchData('monthly')
 })
 

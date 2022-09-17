@@ -26,15 +26,12 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     align-content: center;
     justify-items: center;
-    border: 1px solid red;
-
 }
 
 main {
@@ -42,8 +39,7 @@ main {
     flex-direction: row;
     gap: 30px;
     height: fit-content;
-    margin-right: auto;
-    border: 1px solid red;
+    margin: 0 auto;
 }
 
 .padding {
@@ -54,7 +50,7 @@ main {
     border-radius: 15px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
     main {
         margin-top: 5em;
         margin-bottom: 3em;
@@ -69,7 +65,7 @@ main {
 
 .profile {
     background-color: var(--neutral-dark-blue);
-    min-width: 255px;
+    max-width: 255px;
 }
 
 .profile_card {
@@ -110,11 +106,11 @@ main {
 }
 
 .state-timeframes:hover {
-    color:#FFF;
+    color:#FFF !important; 
     cursor: pointer;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
     .profile {
         width: 327px;
     }
@@ -151,8 +147,7 @@ main {
     flex-wrap: wrap;
     gap: 30px;
     height: fit-content;
-    border: 1px solid red;
-
+    max-width: 850px;
 }
 
 .stats_card {
@@ -211,7 +206,7 @@ main {
     color: var(--neutral-pale-blue);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
     .stats {
         place-content: center;
     }
