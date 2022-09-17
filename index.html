@@ -7,7 +7,7 @@
   <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <script src="./script.js" defer></script>
   <title>Frontend Mentor | Time tracking dashboard</title>
 </head>
 
@@ -39,13 +39,13 @@
         <img class="icon position-fix" src="./images/icon-work.svg" alt="work icon">
         <div class="stats_content">
           <div class="category">
-            <p class="header">Work</p>
+            <p class="header" id="work-header"></p>
             <img class="dots" src="./images/icon-ellipsis.svg" alt="dots">
           </div>
           <div class="current-hours">
-            32hrs
+            <span id="current-work-hrs"></span>
             <div class="previous-hours">
-              Last Week - 36hrs
+              <span id="previous-work-hrs"></span>
             </div>
           </div>
         </div>
@@ -55,13 +55,13 @@
         <img class="icon fix-position" src="./images/icon-play.svg" alt="play icon">
         <div class="stats_content">
           <div class="category">
-            <p class="header">Play</p>
+            <p class="header" id="play-header"> </p>
             <img class="dots" src="./images/icon-ellipsis.svg" alt="dots">
           </div>
           <div class="current-hours">
-            10hrs
+            <span id="current-play-hrs"> </span>
             <div class="previous-hours">
-              Last Week - 8hrs
+              <span id="previous-play-hrs"></span>
             </div>
           </div>
         </div>
@@ -71,13 +71,13 @@
         <img class="icon position-fix" src="./images/icon-study.svg" alt="study icon">
         <div class="stats_content">
           <div class="category">
-            <p class="header">Study</p>
+            <p class="header" id="study-header"></p>
             <img class="dots" src="./images/icon-ellipsis.svg" alt="dots">
           </div>
           <div class="current-hours">
-            4hrs
+            <span id="current-study-hrs"></span>
             <div class="previous-hours">
-              Last Week - 7hrs
+              <span id="previous-study-hrs"></span>
             </div>
           </div>
         </div>
@@ -87,13 +87,13 @@
         <img class="icon" src="./images/icon-exercise.svg" alt="exercise icon">
         <div class="stats_content">
           <div class="category">
-            <p class="header">Exercise</p>
+            <p class="header" id="exercise-header"></p>
             <img class="dots" src="./images/icon-ellipsis.svg" alt="dots">
           </div>
           <div class="current-hours">
-            4hrs
+            <span id="current-exercise-hrs"></span>
             <div class="previous-hours">
-              Last Week - 5hrs
+              <span id="previous-exercise-hrs"></span>
             </div>
           </div>
         </div>
@@ -103,13 +103,13 @@
         <img class="icon position-fix" src="./images/icon-social.svg" alt="social icon">
         <div class="stats_content">
           <div class="category">
-            <p class="header">Social</p>
+            <p class="header" id="social-header"></p>
             <img class="dots" src="./images/icon-ellipsis.svg" alt="dots">
           </div>
           <div class="current-hours">
-            5hrs
+            <span id="current-social-hrs"></span>
             <div class="previous-hours">
-              Last Week - 10hrs
+              <span id="previous-social-hrs"></span>
             </div>
           </div>
         </div>
@@ -119,13 +119,13 @@
         <img class="icon position-fix" src="./images/icon-self-care.svg" alt="self care icon">
         <div class="stats_content">
           <div class="category">
-            <p class="header">Self Care</p>
+            <p class="header" id="self care-header"></p>
             <img class="dots" src="./images/icon-ellipsis.svg" alt="dots">
           </div>
           <div class="current-hours">
-            2hrs
+            <span id="current-self care-hrs"></span>
             <div class="previous-hours">
-              Last Week - 2hrs
+              <span id="previous-self care-hrs"></span>
             </div>
           </div>
         </div>

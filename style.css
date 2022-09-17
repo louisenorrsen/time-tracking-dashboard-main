@@ -15,7 +15,7 @@
     --neutral-verydark-blue: hsl(226, 43%, 10%);
     --neutral-dark-blue: hsl(235, 46%, 20%);
     --neutral-desaturated-blue: hsl(235, 45%, 61%);
-    --neutral-pale-blue: hsl(236, 100%, 87%);
+    --neutral-pale-blue: #bdc1ff;
 }
 
 body {
@@ -27,11 +27,14 @@ body {
     padding: 0;
     margin: 0;
     height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     justify-items: center;
+    border: 1px solid red;
+
 }
 
 main {
@@ -39,6 +42,8 @@ main {
     flex-direction: row;
     gap: 30px;
     height: fit-content;
+    margin-right: auto;
+    border: 1px solid red;
 }
 
 .padding {
@@ -146,6 +151,8 @@ main {
     flex-wrap: wrap;
     gap: 30px;
     height: fit-content;
+    border: 1px solid red;
+
 }
 
 .stats_card {
@@ -175,7 +182,7 @@ main {
 
 .stats_content {
     background-color: var(--neutral-dark-blue);
-    top: 45px;
+    top: 46px;
     right: 0;
     left: 0;
     height: 200px;
@@ -292,3 +299,4 @@ main {
         display: none;
     }
 }
+
