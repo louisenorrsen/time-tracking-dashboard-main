@@ -3,6 +3,7 @@ const weekly = document.getElementById('weekly')
 const monthly = document.getElementById('monthly')
 
 window.addEventListener('load', () => {
+    weekly.style.color = "#fff"
     fetchData('weekly')
 })
 
